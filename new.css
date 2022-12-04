@@ -1,0 +1,11 @@
+body{
+    /*background-image: url("/Assets/Images/sukuna.jpg");*/
+    background-repeat: repeat-y;
+    background-attachment: fixed, scroll;
+    background-size: 300px;
+}
+.div1{
+    border-width: 2px;
+    border-style: groove;
+    margin: 50px 10px;
+}
