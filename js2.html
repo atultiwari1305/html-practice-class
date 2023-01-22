@@ -39,20 +39,39 @@
         }
         
         setInterval(display,1000);
-        // let timeout = setTimeout(greet,5000)
-        // clearTimeout(timeout);
+        let timeout = setTimeout(greet,5000)
+        clearTimeout(timeout);
 
-        // let interval = setInterval(greet,1000);
-        // clearInterval(interval);
-        // para.addEventListener("mouseover", function testHandler1(){
-        //     console.log("Mouse is over the paragraph");
-        // })
+        let interval = setInterval(greet,1000);
+        clearInterval(interval);
+        para.addEventListener("mouseover", function testHandler1(){
+            console.log("Mouse is over the paragraph");
+        })
 
-        // para.addEventListener("mouseout", function testHandler2(){
-        //     console.log("Mouse is out of the paragraph");
-        // })
+        para.addEventListener("mouseout", function testHandler2(){
+            console.log("Mouse is out of the paragraph");
+        })
 
-
+        para.onmouseover = function zoom()
+        {
+            if(para.style.zoom != "none")
+            {
+                para.style.zoom = "200%" ;
+            }
+            else{
+                para.style.zoom = "block";
+            }
+        }
+        para.onmouseout =function zoom()
+        {
+            if(para.style.zoom != "none")
+            {
+                para.style.zoom = "100%";
+            }
+            else{
+                para.style.zoom = "block";
+            }
+        }
         // toggleButton.onclick = function toggleVisibility()
         // {
         //     if(para.style.display != "none")
@@ -66,16 +85,16 @@
         // }
 
 
-        // printButton.onclick = function printOnConsole(){
-        //     for(let i = 0; i < 11;i++){
-        //         console.log(i);
-        //     }
-        // }
+        printButton.onclick = function printOnConsole(){
+            for(let i = 0; i < 11;i++){
+                console.log(i);
+            }
+        }
 
-        // alertButton.onclick = function giveAlert()
-        // {
-        //     alert("CLicked on button");
-        // }
+        alertButton.onclick = function giveAlert()
+        {
+            alert("CLicked on button");
+        }
     </script>
 
 </body>
